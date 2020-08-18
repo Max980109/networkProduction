@@ -1,0 +1,946 @@
+[
+  {
+    "ID": 0,
+    "Formula change": "C5H3N5O-1",
+    "Heavy atom #": 10,
+    "Reaction": "(+C5H5N5- H2O)",
+    "Mass difference": 117.0439,
+    "Description": "addition of adenine"
+  },
+  {
+    "ID": 1,
+    "Formula change": "C10H11N5O3",
+    "Heavy atom #": 18,
+    "Reaction": "(+C10H11N5O3)",
+    "Mass difference": 249.0862,
+    "Description": "addition of adenosine"
+  },
+  {
+    "ID": 2,
+    "Formula change": "C10H11N5O4",
+    "Heavy atom #": 19,
+    "Reaction": "(+C10H11N5O4)",
+    "Mass difference": 265.0811,
+    "Description": "addition of guanosine"
+  },
+  {
+    "ID": 3,
+    "Formula change": "C10H12N2O4",
+    "Heavy atom #": 16,
+    "Reaction": "(+C10H12N2O4)",
+    "Mass difference": 224.0797,
+    "Description": "addition of thymidine"
+  },
+  {
+    "ID": 4,
+    "Formula change": "C10H15N3O5S",
+    "Heavy atom #": 19,
+    "Reaction": "(+C10H15N3O5S)",
+    "Mass difference": 289.0732,
+    "Description": "addition of glutathione"
+  },
+  {
+    "ID": 5,
+    "Formula change": "C10H15N3O6S",
+    "Heavy atom #": 20,
+    "Reaction": "(+C10H15N3O6S)",
+    "Mass difference": 305.0682,
+    "Description": "addition of S-glutathione"
+  },
+  {
+    "ID": 6,
+    "Formula change": "C10H7NO",
+    "Heavy atom #": 12,
+    "Reaction": "(+C10H7NO)",
+    "Mass difference": 157.0528,
+    "Description": "indole acetylation"
+  },
+  {
+    "ID": 7,
+    "Formula change": "C12H20O10",
+    "Heavy atom #": 22,
+    "Reaction": "(+C12H20O10)",
+    "Mass difference": 324.1057,
+    "Description": "addition of di-hexose"
+  },
+  {
+    "ID": 8,
+    "Formula change": "C16H30O",
+    "Heavy atom #": 17,
+    "Reaction": "(+C16H30O)",
+    "Mass difference": 238.2297,
+    "Description": "addition of palmitic acid"
+  },
+  {
+    "ID": 9,
+    "Formula change": "C18H30O15",
+    "Heavy atom #": 33,
+    "Reaction": "(+C18H30O15)",
+    "Mass difference": 486.1585,
+    "Description": "addition of tri-hexose"
+  },
+  {
+    "ID": 10,
+    "Formula change": "C2H2O",
+    "Heavy atom #": 3,
+    "Reaction": "(+C2H2O)",
+    "Mass difference": 42.0106,
+    "Description": "acetylation"
+  },
+  {
+    "ID": 11,
+    "Formula change": "C2H3NO",
+    "Heavy atom #": 4,
+    "Reaction": "(+C2H3NO)",
+    "Mass difference": 57.0215,
+    "Description": "glycine conjugation"
+  },
+  {
+    "ID": 12,
+    "Formula change": "C2H4",
+    "Heavy atom #": 2,
+    "Reaction": "(+C2H4)",
+    "Mass difference": 28.0313,
+    "Description": "addition of C2H4"
+  },
+  {
+    "ID": 13,
+    "Formula change": "C2H5NO2S",
+    "Heavy atom #": 6,
+    "Reaction": "(+C2H5NO2S)",
+    "Mass difference": 107.0041,
+    "Description": "taurine conjugation"
+  },
+  {
+    "ID": 14,
+    "Formula change": "C3H2O3",
+    "Heavy atom #": 6,
+    "Reaction": "(+C3H2O3)",
+    "Mass difference": 86.0004,
+    "Description": "malonylation"
+  },
+  {
+    "ID": 15,
+    "Formula change": "C3H4O",
+    "Heavy atom #": 4,
+    "Reaction": "(+C3H4O)",
+    "Mass difference": 56.0262,
+    "Description": "propionylation"
+  },
+  {
+    "ID": 16,
+    "Formula change": "C3H5NO2S",
+    "Heavy atom #": 7,
+    "Reaction": "(+C3H5NO2S)",
+    "Mass difference": 119.0041,
+    "Description": "S-cysteine conjugation"
+  },
+  {
+    "ID": 17,
+    "Formula change": "C3H5NOS",
+    "Heavy atom #": 6,
+    "Reaction": "(+C3H5NOS)",
+    "Mass difference": 103.0092,
+    "Description": "cysteine conjugation"
+  },
+  {
+    "ID": 18,
+    "Formula change": "C4H2N2O",
+    "Heavy atom #": 7,
+    "Reaction": "(+C4H2N2O)",
+    "Mass difference": 94.0167,
+    "Description": "addition of uracil"
+  },
+  {
+    "ID": 19,
+    "Formula change": "C4H3N3",
+    "Heavy atom #": 7,
+    "Reaction": "(+C4H3N3)",
+    "Mass difference": 93.0327,
+    "Description": "addition of cytosine"
+  },
+  {
+    "ID": 20,
+    "Formula change": "C4H4O",
+    "Heavy atom #": 5,
+    "Reaction": "(+C4H4O)",
+    "Mass difference": 68.0262,
+    "Description": "crotonylation"
+  },
+  {
+    "ID": 21,
+    "Formula change": "C4H4O3",
+    "Heavy atom #": 7,
+    "Reaction": "(+C4H4O3)",
+    "Mass difference": 100.016,
+    "Description": "succinylation"
+  },
+  {
+    "ID": 22,
+    "Formula change": "C4H6O",
+    "Heavy atom #": 5,
+    "Reaction": "(+C4H6O)",
+    "Mass difference": 70.0419,
+    "Description": "butyrylation"
+  },
+  {
+    "ID": 23,
+    "Formula change": "C5H3N5",
+    "Heavy atom #": 10,
+    "Reaction": "(+C5H3N5)",
+    "Mass difference": 133.0388,
+    "Description": "addition of guanine"
+  },
+  {
+    "ID": 24,
+    "Formula change": "C5H4N2O",
+    "Heavy atom #": 8,
+    "Reaction": "(+C5H4N2O)",
+    "Mass difference": 108.0324,
+    "Description": "addition of thymine"
+  },
+  {
+    "ID": 25,
+    "Formula change": "C5H6O3",
+    "Heavy atom #": 8,
+    "Reaction": "(+C5H6O3)",
+    "Mass difference": 114.0317,
+    "Description": "glutaryllation"
+  },
+  {
+    "ID": 26,
+    "Formula change": "C5H7NO3S",
+    "Heavy atom #": 10,
+    "Reaction": "(+C5H7NO3S)",
+    "Mass difference": 161.0147,
+    "Description": "addition of N-acetyl-S-cysteine"
+  },
+  {
+    "ID": 27,
+    "Formula change": "C5H8O4",
+    "Heavy atom #": 9,
+    "Reaction": "(+C5H8O4)",
+    "Mass difference": 132.0423,
+    "Description": "addition of ribose"
+  },
+  {
+    "ID": 28,
+    "Formula change": "C6H10O5",
+    "Heavy atom #": 11,
+    "Reaction": "(+C6H10O5)",
+    "Mass difference": 162.0528,
+    "Description": "addition of hexose"
+  },
+  {
+    "ID": 29,
+    "Formula change": "C6H11O8P",
+    "Heavy atom #": 15,
+    "Reaction": "(+C6H11O8P)",
+    "Mass difference": 242.0192,
+    "Description": "addition of glucose-6-phosphate"
+  },
+  {
+    "ID": 30,
+    "Formula change": "C6H8O6",
+    "Heavy atom #": 12,
+    "Reaction": "(+C6H8O6)",
+    "Mass difference": 176.0321,
+    "Description": "addition of glucuronic acid"
+  },
+  {
+    "ID": 31,
+    "Formula change": "C7H13NO2",
+    "Heavy atom #": 10,
+    "Reaction": "(+C7H13NO2)",
+    "Mass difference": 143.0946,
+    "Description": "addition of carnitine"
+  },
+  {
+    "ID": 32,
+    "Formula change": "C9H10N2O5",
+    "Heavy atom #": 16,
+    "Reaction": "(+C9H10N2O5)",
+    "Mass difference": 226.059,
+    "Description": "addition of uridine"
+  },
+  {
+    "ID": 33,
+    "Formula change": "C9H11N3O4",
+    "Heavy atom #": 16,
+    "Reaction": "(+C9H11N3O4)",
+    "Mass difference": 225.075,
+    "Description": "addition of cytidine"
+  },
+  {
+    "ID": 34,
+    "Formula change": "CH2",
+    "Heavy atom #": 1,
+    "Reaction": "(+CH2)",
+    "Mass difference": 14.0157,
+    "Description": "methylation"
+  },
+  {
+    "ID": 35,
+    "Formula change": "CO",
+    "Heavy atom #": 2,
+    "Reaction": "(+CO)",
+    "Mass difference": 27.9949,
+    "Description": "addition of CO"
+  },
+  {
+    "ID": 36,
+    "Formula change": "CO2",
+    "Heavy atom #": 3,
+    "Reaction": "(+CO2)",
+    "Mass difference": 43.9898,
+    "Description": "addition of CO2"
+  },
+  {
+    "ID": 37,
+    "Formula change": "H2",
+    "Heavy atom #": 0,
+    "Reaction": "(+H2)",
+    "Mass difference": 2.0157,
+    "Description": "hydrogenation"
+  },
+  {
+    "ID": 38,
+    "Formula change": "H2O",
+    "Heavy atom #": 1,
+    "Reaction": "(+H2O)",
+    "Mass difference": 18.0106,
+    "Description": "addition of water"
+  },
+  {
+    "ID": 39,
+    "Formula change": "HPO3",
+    "Heavy atom #": 4,
+    "Reaction": "(+HPO3)",
+    "Mass difference": 79.9663,
+    "Description": "addition of phosphate"
+  },
+  {
+    "ID": 40,
+    "Formula change": "NH",
+    "Heavy atom #": 1,
+    "Reaction": "(+NH)",
+    "Mass difference": 15.0109,
+    "Description": "addition of NH"
+  },
+  {
+    "ID": 41,
+    "Formula change": "NH3",
+    "Heavy atom #": 1,
+    "Reaction": "(+NH3)",
+    "Mass difference": 17.0265,
+    "Description": "addition of ammonia"
+  },
+  {
+    "ID": 42,
+    "Formula change": "O",
+    "Heavy atom #": 1,
+    "Reaction": "(+O)",
+    "Mass difference": 15.9949,
+    "Description": "oxidation"
+  },
+  {
+    "ID": 43,
+    "Formula change": "SO3",
+    "Heavy atom #": 4,
+    "Reaction": "(+SO3)",
+    "Mass difference": 79.9568,
+    "Description": "sulfate conjugation"
+  },
+  {
+    "ID": 44,
+    "Formula change": "O3",
+    "Heavy atom #": 4,
+    "Reaction": "(SH -> SO3H)",
+    "Mass difference": 47.9847,
+    "Description": "thiol to sulfonic acid"
+  },
+  {
+    "ID": 45,
+    "Formula change": "H2P2O6",
+    "Heavy atom #": 8,
+    "Reaction": "(+H2P2O6)",
+    "Mass difference": 159.9327,
+    "Description": "addition of di-phosphate"
+  },
+  {
+    "ID": 46,
+    "Formula change": "H3P3O9",
+    "Heavy atom #": 12,
+    "Reaction": "(+H3P3O9)",
+    "Mass difference": 239.899,
+    "Description": "addition of tri-phosphate"
+  },
+  {
+    "ID": 47,
+    "Formula change": "FH-1",
+    "Heavy atom #": 1,
+    "Reaction": "(+F-H)",
+    "Mass difference": 17.9906,
+    "Description": "fluorination"
+  },
+  {
+    "ID": 48,
+    "Formula change": "ClH-1",
+    "Heavy atom #": 1,
+    "Reaction": "(+Cl-H)",
+    "Mass difference": 33.961,
+    "Description": "chlorination"
+  },
+  {
+    "ID": 49,
+    "Formula change": "BrH-1",
+    "Heavy atom #": 1,
+    "Reaction": "(+Br-H)",
+    "Mass difference": 77.9105,
+    "Description": "bromination"
+  },
+  {
+    "ID": 50,
+    "Formula change": "IH-1",
+    "Heavy atom #": 1,
+    "Reaction": "(+I-H)",
+    "Mass difference": 125.8966,
+    "Description": "iodination"
+  },
+  {
+    "ID": 51,
+    "Formula change": "H-2O2",
+    "Heavy atom #": 3,
+    "Reaction": "(NH2 -> NO2)",
+    "Mass difference": 29.9742,
+    "Description": "nitrification"
+  },
+  {
+    "ID": 52,
+    "Formula change": "CF3H-1",
+    "Heavy atom #": 4,
+    "Reaction": "(+CF3-H)",
+    "Mass difference": 67.9874,
+    "Description": "addition of trifluoromethyl"
+  },
+  {
+    "ID": 53,
+    "Formula change": "C5NH11",
+    "Heavy atom #": 6,
+    "Reaction": "(+C5NH11)",
+    "Mass difference": 85.0891,
+    "Description": "addition of choline"
+  },
+  {
+    "ID": 54,
+    "Formula change": "C5H6O",
+    "Heavy atom #": 6,
+    "Reaction": "(+C5H6O)",
+    "Mass difference": 82.0419,
+    "Description": "addition of tiglyl"
+  },
+  {
+    "ID": 55,
+    "Formula change": "NO2H-1",
+    "Heavy atom #": 3,
+    "Reaction": "(+NO2-H)",
+    "Mass difference": 44.9851,
+    "Description": "addition of nitro"
+  },
+  {
+    "ID": 56,
+    "Formula change": "C7H6",
+    "Heavy atom #": 7,
+    "Reaction": "(+C7H7-H)",
+    "Mass difference": 91.0548,
+    "Description": "addition of benzyl"
+  },
+  {
+    "ID": 57,
+    "Formula change": "C6H4",
+    "Heavy atom #": 6,
+    "Reaction": "(+C6H5-H)",
+    "Mass difference": 76.0313,
+    "Description": "addition of phenyl"
+  },
+  {
+    "ID": 58,
+    "Formula change": "C2H2O2",
+    "Heavy atom #": 4,
+    "Reaction": "(+C2H2O2)",
+    "Mass difference": 58.0055,
+    "Description": "addition of acetic acid"
+  },
+  {
+    "ID": 59,
+    "Formula change": "C-5H-3N-5O",
+    "Heavy atom #": 10,
+    "Reaction": "(-C5H5N5+ H2O)",
+    "Mass difference": -117.0439,
+    "Description": "loss of adenine"
+  },
+  {
+    "ID": 60,
+    "Formula change": "C-10H-11N-5O-3",
+    "Heavy atom #": 18,
+    "Reaction": "(-C10H11N5O3)",
+    "Mass difference": -249.0862,
+    "Description": "loss of adenosine"
+  },
+  {
+    "ID": 61,
+    "Formula change": "C-10H-11N-5O-4",
+    "Heavy atom #": 19,
+    "Reaction": "(-C10H11N5O4)",
+    "Mass difference": -265.0811,
+    "Description": "loss of guanosine"
+  },
+  {
+    "ID": 62,
+    "Formula change": "C-10H-12N-2O-4",
+    "Heavy atom #": 16,
+    "Reaction": "(-C10H12N2O4)",
+    "Mass difference": -224.0797,
+    "Description": "loss of thymidine"
+  },
+  {
+    "ID": 63,
+    "Formula change": "C-10H-15N-3O-5S-1",
+    "Heavy atom #": 19,
+    "Reaction": "(-C10H15N3O5S)",
+    "Mass difference": -289.0732,
+    "Description": "loss of glutathione"
+  },
+  {
+    "ID": 64,
+    "Formula change": "C-10H-15N-3O-6S-1",
+    "Heavy atom #": 20,
+    "Reaction": "(-C10H15N3O6S)",
+    "Mass difference": -305.0682,
+    "Description": "loss of S-glutathione"
+  },
+  {
+    "ID": 65,
+    "Formula change": "C-10H-7N-1O-1",
+    "Heavy atom #": 12,
+    "Reaction": "(-C10H7NO)",
+    "Mass difference": -157.0528,
+    "Description": "loss of indole acetyl"
+  },
+  {
+    "ID": 66,
+    "Formula change": "C-12H-20O-10",
+    "Heavy atom #": 22,
+    "Reaction": "(-C12H20O10)",
+    "Mass difference": -324.1057,
+    "Description": "loss of di-hexose"
+  },
+  {
+    "ID": 67,
+    "Formula change": "C-16H-30O-1",
+    "Heavy atom #": 17,
+    "Reaction": "(-C16H30O)",
+    "Mass difference": -238.2297,
+    "Description": "loss of palmitic acid"
+  },
+  {
+    "ID": 68,
+    "Formula change": "C-18H-30O-15",
+    "Heavy atom #": 33,
+    "Reaction": "(-C18H30O15)",
+    "Mass difference": -486.1585,
+    "Description": "loss of tri-hexose"
+  },
+  {
+    "ID": 69,
+    "Formula change": "C-2H-2O-1",
+    "Heavy atom #": 3,
+    "Reaction": "(-C2H2O)",
+    "Mass difference": -42.0106,
+    "Description": "deacetylation"
+  },
+  {
+    "ID": 70,
+    "Formula change": "C-2H-3N-1O-1",
+    "Heavy atom #": 4,
+    "Reaction": "(-C2H3NO)",
+    "Mass difference": -57.0215,
+    "Description": "loss of glycine"
+  },
+  {
+    "ID": 71,
+    "Formula change": "C-2H-4",
+    "Heavy atom #": 2,
+    "Reaction": "(-C2H4)",
+    "Mass difference": -28.0313,
+    "Description": "loss of C2H4"
+  },
+  {
+    "ID": 72,
+    "Formula change": "C-2H-5N-1O-2S-1",
+    "Heavy atom #": 6,
+    "Reaction": "(-C2H5NO2S)",
+    "Mass difference": -107.0041,
+    "Description": "loss of taurine"
+  },
+  {
+    "ID": 73,
+    "Formula change": "C-3H-2O-3",
+    "Heavy atom #": 6,
+    "Reaction": "(-C3H2O3)",
+    "Mass difference": -86.0004,
+    "Description": "loss of malonyl"
+  },
+  {
+    "ID": 74,
+    "Formula change": "C-3H-4O-1",
+    "Heavy atom #": 4,
+    "Reaction": "(-C3H4O)",
+    "Mass difference": -56.0262,
+    "Description": "loss of propionyl"
+  },
+  {
+    "ID": 75,
+    "Formula change": "C-3H-5N-1O-2S-1",
+    "Heavy atom #": 7,
+    "Reaction": "(-C3H5NO2S)",
+    "Mass difference": -119.0041,
+    "Description": "loss of S-cysteine"
+  },
+  {
+    "ID": 76,
+    "Formula change": "C-3H-5N-1O-1S-1",
+    "Heavy atom #": 6,
+    "Reaction": "(-C3H5NOS)",
+    "Mass difference": -103.0092,
+    "Description": "loss of cysteine"
+  },
+  {
+    "ID": 77,
+    "Formula change": "C-4H-2N-2O-1",
+    "Heavy atom #": 7,
+    "Reaction": "(-C4H2N2O)",
+    "Mass difference": -94.0167,
+    "Description": "loss of uracil"
+  },
+  {
+    "ID": 78,
+    "Formula change": "C-4H-3N-3",
+    "Heavy atom #": 7,
+    "Reaction": "(-C4H3N3)",
+    "Mass difference": -93.0327,
+    "Description": "loss of cytosine"
+  },
+  {
+    "ID": 79,
+    "Formula change": "C-4H-4O-1",
+    "Heavy atom #": 5,
+    "Reaction": "(-C4H4O)",
+    "Mass difference": -68.0262,
+    "Description": "loss of crotonyl"
+  },
+  {
+    "ID": 80,
+    "Formula change": "C-4H-4O-3",
+    "Heavy atom #": 7,
+    "Reaction": "(-C4H4O3)",
+    "Mass difference": -100.016,
+    "Description": "loss of succinyl"
+  },
+  {
+    "ID": 81,
+    "Formula change": "C-4H-6O-1",
+    "Heavy atom #": 5,
+    "Reaction": "(-C4H6O)",
+    "Mass difference": -70.0419,
+    "Description": "loss of butyryl"
+  },
+  {
+    "ID": 82,
+    "Formula change": "C-5H-3N-5",
+    "Heavy atom #": 10,
+    "Reaction": "(-C5H3N5)",
+    "Mass difference": -133.0388,
+    "Description": "loss of guanine"
+  },
+  {
+    "ID": 83,
+    "Formula change": "C-5H-4N-2O-1",
+    "Heavy atom #": 8,
+    "Reaction": "(-C5H4N2O)",
+    "Mass difference": -108.0324,
+    "Description": "loss of thymine"
+  },
+  {
+    "ID": 84,
+    "Formula change": "C-5H-6O-3",
+    "Heavy atom #": 8,
+    "Reaction": "(-C5H6O3)",
+    "Mass difference": -114.0317,
+    "Description": "loss of glutaryl"
+  },
+  {
+    "ID": 85,
+    "Formula change": "C-5H-7N-1O-3S-1",
+    "Heavy atom #": 10,
+    "Reaction": "(-C5H7NO3S)",
+    "Mass difference": -161.0147,
+    "Description": "loss of N-acetyl-S-cysteine"
+  },
+  {
+    "ID": 86,
+    "Formula change": "C-5H-8O-4",
+    "Heavy atom #": 9,
+    "Reaction": "(-C5H8O4)",
+    "Mass difference": -132.0423,
+    "Description": "loss of ribose"
+  },
+  {
+    "ID": 87,
+    "Formula change": "C-6H-10O-5",
+    "Heavy atom #": 11,
+    "Reaction": "(-C6H10O5)",
+    "Mass difference": -162.0528,
+    "Description": "loss of hexose"
+  },
+  {
+    "ID": 88,
+    "Formula change": "C-6H-11O-8P-1",
+    "Heavy atom #": 15,
+    "Reaction": "(-C6H11O8P)",
+    "Mass difference": -242.0192,
+    "Description": "loss of glucose-6-phosphate"
+  },
+  {
+    "ID": 89,
+    "Formula change": "C-6H-8O-6",
+    "Heavy atom #": 12,
+    "Reaction": "(-C6H8O6)",
+    "Mass difference": -176.0321,
+    "Description": "loss of glucuronic acid"
+  },
+  {
+    "ID": 90,
+    "Formula change": "C-7H-13N-1O-2",
+    "Heavy atom #": 10,
+    "Reaction": "(-C7H13NO2)",
+    "Mass difference": -143.0946,
+    "Description": "loss of carnitine"
+  },
+  {
+    "ID": 91,
+    "Formula change": "C-9H-10N-2O-5",
+    "Heavy atom #": 16,
+    "Reaction": "(-C9H10N2O5)",
+    "Mass difference": -226.059,
+    "Description": "loss of uridine"
+  },
+  {
+    "ID": 92,
+    "Formula change": "C-9H-11N-3O-4",
+    "Heavy atom #": 16,
+    "Reaction": "(-C9H11N3O4)",
+    "Mass difference": -225.075,
+    "Description": "loss of cytidine"
+  },
+  {
+    "ID": 93,
+    "Formula change": "C-1H-2",
+    "Heavy atom #": 1,
+    "Reaction": "(-CH2)",
+    "Mass difference": -14.0157,
+    "Description": "demethylation"
+  },
+  {
+    "ID": 94,
+    "Formula change": "C-1O-1",
+    "Heavy atom #": 2,
+    "Reaction": "(-CO)",
+    "Mass difference": -27.9949,
+    "Description": "loss of CO"
+  },
+  {
+    "ID": 95,
+    "Formula change": "C-1O-2",
+    "Heavy atom #": 3,
+    "Reaction": "(-CO2)",
+    "Mass difference": -43.9898,
+    "Description": "loss of CO2"
+  },
+  {
+    "ID": 96,
+    "Formula change": "H-2",
+    "Heavy atom #": 0,
+    "Reaction": "(-H2)",
+    "Mass difference": -2.0157,
+    "Description": "dehydrogenation"
+  },
+  {
+    "ID": 97,
+    "Formula change": "H-2O-1",
+    "Heavy atom #": 1,
+    "Reaction": "(-H2O)",
+    "Mass difference": -18.0106,
+    "Description": "loss of water"
+  },
+  {
+    "ID": 98,
+    "Formula change": "H-1O-3P-1",
+    "Heavy atom #": 4,
+    "Reaction": "(-HPO3)",
+    "Mass difference": -79.9663,
+    "Description": "loss of phosphate"
+  },
+  {
+    "ID": 99,
+    "Formula change": "H-1N-1",
+    "Heavy atom #": 1,
+    "Reaction": "(-NH)",
+    "Mass difference": -15.0109,
+    "Description": "loss of NH"
+  },
+  {
+    "ID": 100,
+    "Formula change": "H-3N-1",
+    "Heavy atom #": 1,
+    "Reaction": "(-NH3)",
+    "Mass difference": -17.0265,
+    "Description": "loss of ammonia"
+  },
+  {
+    "ID": 101,
+    "Formula change": "O-1",
+    "Heavy atom #": 1,
+    "Reaction": "(-O)",
+    "Mass difference": -15.9949,
+    "Description": "loss of oxygen"
+  },
+  {
+    "ID": 102,
+    "Formula change": "O-3S-1",
+    "Heavy atom #": 4,
+    "Reaction": "(-SO3)",
+    "Mass difference": -79.9568,
+    "Description": "loss of sulfate"
+  },
+  {
+    "ID": 103,
+    "Formula change": "O-3",
+    "Heavy atom #": 4,
+    "Reaction": "(SO3H -> SH)",
+    "Mass difference": -47.9847,
+    "Description": "sulfonic acid to thiol"
+  },
+  {
+    "ID": 104,
+    "Formula change": "H-2P-2O-6",
+    "Heavy atom #": 8,
+    "Reaction": "(-H2P2O6)",
+    "Mass difference": -159.9327,
+    "Description": "loss of di-phosphate"
+  },
+  {
+    "ID": 105,
+    "Formula change": "H-3P-3O-9",
+    "Heavy atom #": 12,
+    "Reaction": "(-H3P3O9)",
+    "Mass difference": -239.899,
+    "Description": "loss of tri-phosphate"
+  },
+  {
+    "ID": 106,
+    "Formula change": "HF-1",
+    "Heavy atom #": 1,
+    "Reaction": "(-F+H)",
+    "Mass difference": -17.9906,
+    "Description": "defluorination"
+  },
+  {
+    "ID": 107,
+    "Formula change": "HCl-1",
+    "Heavy atom #": 1,
+    "Reaction": "(-Cl+H)",
+    "Mass difference": -33.961,
+    "Description": "dechlorination"
+  },
+  {
+    "ID": 108,
+    "Formula change": "HBr-1",
+    "Heavy atom #": 1,
+    "Reaction": "(-Br+H)",
+    "Mass difference": -77.9105,
+    "Description": "debromination"
+  },
+  {
+    "ID": 109,
+    "Formula change": "HI-1",
+    "Heavy atom #": 1,
+    "Reaction": "(-I+H)",
+    "Mass difference": -125.8966,
+    "Description": "deiodination"
+  },
+  {
+    "ID": 110,
+    "Formula change": "H2O-2",
+    "Heavy atom #": 3,
+    "Reaction": "(NO2 -> NH2)",
+    "Mass difference": -29.9742,
+    "Description": "denitrification"
+  },
+  {
+    "ID": 111,
+    "Formula change": "C-1F-3H",
+    "Heavy atom #": 4,
+    "Reaction": "(-CF3+H)",
+    "Mass difference": -67.9874,
+    "Description": "loss of trifluoromethyl"
+  },
+  {
+    "ID": 112,
+    "Formula change": "C-5N-1H-11",
+    "Heavy atom #": 6,
+    "Reaction": "(-C5NH11)",
+    "Mass difference": -85.0891,
+    "Description": "loss of choline"
+  },
+  {
+    "ID": 113,
+    "Formula change": "C-5H-6O-1",
+    "Heavy atom #": 6,
+    "Reaction": "(-C5H6O)",
+    "Mass difference": -82.0419,
+    "Description": "loss of tiglyl"
+  },
+  {
+    "ID": 114,
+    "Formula change": "N-1O-2H",
+    "Heavy atom #": 3,
+    "Reaction": "(-NO2+H)",
+    "Mass difference": -44.9851,
+    "Description": "loss of nitro"
+  },
+  {
+    "ID": 115,
+    "Formula change": "C-7H-6",
+    "Heavy atom #": 7,
+    "Reaction": "(-C7H7+H)",
+    "Mass difference": -91.0548,
+    "Description": "loss of benzyl"
+  },
+  {
+    "ID": 116,
+    "Formula change": "C-6H-4",
+    "Heavy atom #": 6,
+    "Reaction": "(-C6H5+H)",
+    "Mass difference": -76.0313,
+    "Description": "loss of phenyl"
+  },
+  {
+    "ID": 117,
+    "Formula change": "C-2H-2O-2",
+    "Heavy atom #": 4,
+    "Reaction": "(-C2H2O2)",
+    "Mass difference": -58.0055,
+    "Description": "loss of acetic acid"
+  }
+]
