@@ -1,4 +1,4 @@
-FROM node:latest as build
+FROM node:14.3.0 as build
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app
