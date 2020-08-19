@@ -4,7 +4,6 @@ import "../index.css";
 import FirstPage from "./firstStep/firstPage.jsx";
 import TopNav from "./topNav.jsx";
 import SecondPage from "./secondStep/secondPage.jsx";
-//import TableDisplay from "./thirdStep/tableDisplay.jsx";
 import history from "./history";
 import BioReactions from "./bioReactions";
 
@@ -49,11 +48,6 @@ export class App extends React.Component {
             <Route
               path="/"
               exact
-              // component={FirstPage}
-              // tolerance={tolerance}
-              // filterLevel={filterLevel}
-              // onToleranceChange={this.handleToleranceChange}
-              // onFilterChange={this.handleFilterLevelChange}
               render={(props) => (
                 <FirstPage
                   {...props}
@@ -66,11 +60,6 @@ export class App extends React.Component {
             />
             <Route
               path="/secondpage"
-              // component={SecondPage}
-              // tolerance={tolerance}
-              // filterLevel={filterLevel}
-              // onToleranceChange={this.handleToleranceChange}
-              // onFilterChange={this.handleFilterLevelChange}
               render={(props) => (
                 <SecondPage
                   {...props}
