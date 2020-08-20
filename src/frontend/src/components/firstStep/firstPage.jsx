@@ -16,7 +16,8 @@ import axios from "axios";
 const useStyles = (theme) => ({
   root: {
     flexGrow: 1,
-    display: "contents"
+    margin: theme.spacing(10)
+    
   },
   largeComponent: {
     height: "100%",
