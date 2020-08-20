@@ -20,7 +20,7 @@ const useStyles = (theme) => ({
     
   },
   largeComponent: {
-    height: "100%",
+    height: "90vh",
   },
   paperS1: {
     padding: theme.spacing(1),
@@ -128,7 +128,7 @@ export class dropzone extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div id="drop" ref={this.wrapper}>
+      <div className={classes.root} ref={this.wrapper}>
         <Grid container spacing={10}>
           <Grid
             container
