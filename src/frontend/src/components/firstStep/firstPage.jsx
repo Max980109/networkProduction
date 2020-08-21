@@ -20,7 +20,7 @@ const useStyles = (theme) => ({
     
   },
   largeComponent: {
-    height: "90vh",
+    height: "100%",
   },
   paperS1: {
     padding: theme.spacing(1),
