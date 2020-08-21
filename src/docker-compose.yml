@@ -8,8 +8,9 @@ services:
     ports:
       - 80:80
       - 443:443
+
     volumes:
-      - /home/network/ssl:/etc/nginx/certs #TODO: rember to change config dir
+      - /home/network/ssl:/etc/nginx/certs 
 
   backend:
     restart: always
