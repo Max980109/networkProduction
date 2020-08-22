@@ -70,6 +70,7 @@ def read_csv_sig_json():
     return pos_sig
 
 
+
 def get_response_image(image_path):
     pil_img = Image.open(image_path, mode='r') # reads the PIL image
     byte_arr = io.BytesIO()
@@ -84,38 +85,40 @@ def get_response_image(image_path):
 def upload_dataset():
         print(request.method)
         print('63 has been executed')
-        # check if the POST request has the file part
-        if 'file' not in request.files:             #TODO: make sure set frontend's corresponding name as 'file'       
-            return jsonify({'error':'no file uploaded'}), 400
-        file = request.files['file']
+        print(request)
+        if ('file' in request.files):
+            # check if the POST request has the file part
+            file = request.files['file']
         # check if the file name is empty string
-        print('69 has been executed')
-        if file.filename == '':
-            return jsonify({'error':'file name cant be empty'}), 400
-        print('72 has been executed')
-        print(file.filename)
-        if file and allowed_file(file.filename):
-            print('74 has been executed')
-            dataset_name = secure_filename(file.filename)
+            print('69 has been executed')
+            if file.filename == '':
+                return jsonify({'error':'file name cant be empty'}), 400
+            print('72 has been executed')
             print(file.filename)
-            if is_empty_folder('./meta'):
-                file.save(os.path.join(app.config['META_FOLDER'], dataset_name))
-                return jsonify({'success':'successfully uploaded'}), 200
+            if file and allowed_file(file.filename):
+                print('74 has been executed')
+                dataset_name = secure_filename(file.filename)
+                print(file.filename)
+                if is_empty_folder('./meta'):
+                    file.save(os.path.join(app.config['META_FOLDER'], dataset_name))
+                    return jsonify({'success':'successfully uploaded'}), 200
+                else:
+                    print('82 has been executed')
+                    clear_folder('./meta/*')
+                    file.save(os.path.join(app.config['META_FOLDER'], dataset_name))
+                    return jsonify({'success':'successfully uploaded'}), 200
             else:
-                print('82 has been executed')
-                clear_folder('./meta/*')
-                file.save(os.path.join(app.config['META_FOLDER'], dataset_name))
-                return jsonify({'success':'successfully uploaded'}), 200
-        else:
-            return jsonify(error = 'your file name is insecure, please rename your file')
+                return jsonify(error = 'your file name is insecure, please rename your file')
+        elif ('sample' in request.files):
+            os.popen('cp ./raw_metabolomics.csv ./meta/raw_metabolomics.csv')
+            
         
 # upload the positive test file
 @api.route('/uploads/sig', methods=['POST'])
 @cross_origin()
 def upload_pos_file():
+    if ('file' in request.files):
     # check if the POST request has the file part
-        if 'file' not in request.files:             #TODO: make sure set frontend's corresponding name as 'file'       
-            return jsonify({'error':'no file uploaded'}), 400
         file = request.files['file']
         # check if the file name is empty string
         if file.filename == '':
@@ -131,15 +134,17 @@ def upload_pos_file():
                 return jsonify({'success':'successfully uploaded'}), 200
         else:
             return jsonify(error = 'your file name is insecure, please rename your file')
+    elif ('sample' in request.files):
+        os.popen('cp ./significant_list_with_SMILES.csv ./sig/significant_list_with_SMILES.csv')
+
 
 
 @api.route('/loadTable', methods=['GET'])
 @cross_origin()
 def load_Table():
-    sig = read_csv_sig_json()
-    json_sig = json.loads(sig.to_json(orient='records'))
-    return {'table': json_sig}, 200
-
+        sig = read_csv_sig_json()
+        json_sig = json.loads(sig.to_json(orient='records'))
+        return {'table': json_sig}, 200
 
 # analyze the data
 @api.route('/analyze', methods=['POST'])
