@@ -29,7 +29,7 @@ matplotlib.use('agg')
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-# api = Blueprint('api', __name__)
+api = Blueprint('api', __name__)
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -81,7 +81,7 @@ def get_response_image(image_path):
 
 
 # upload the dataset file
-@app.route('/uploads/meta', methods=['POST'])
+@api.route('/uploads/meta', methods=['POST'])
 @cross_origin()
 def upload_dataset():
         print(request.method)
@@ -117,7 +117,7 @@ def upload_dataset():
             
         
 # upload the positive test file
-@app.route('/uploads/sig', methods=['POST'])
+@api.route('/uploads/sig', methods=['POST'])
 @cross_origin()
 def upload_pos_file():
     if ('file' in request.files):
@@ -144,7 +144,7 @@ def upload_pos_file():
 
 
 
-@app.route('/loadTable', methods=['GET'])
+@api.route('/loadTable', methods=['GET'])
 @cross_origin()
 def load_Table():
         sig = read_csv_sig_json()
@@ -152,7 +152,7 @@ def load_Table():
         return {'table': json_sig}, 200
 
 # analyze the data
-@app.route('/analyze', methods=['POST'])
+@api.route('/analyze', methods=['POST'])
 @cross_origin()
 def analyze_data():
     if not is_empty_folder('./meta') and not is_empty_folder('./sig'):
@@ -175,7 +175,7 @@ def analyze_data():
     else:
         return jsonify({'error': 'please check you uploaded files'}), 400
 
-# app.register_blueprint(api, url_prefix='/api')
+app.register_blueprint(api, url_prefix='/api')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=5050)
