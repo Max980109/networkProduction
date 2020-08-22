@@ -10,7 +10,7 @@ services:
       - 443:443
 
     volumes:
-      - /home/ubuntu/ssl:/etc/nginx/certs 
+      - /home/maxpayne19980109/ssl:/etc/nginx/certs 
 
   backend:
     restart: always
