@@ -51,8 +51,8 @@ export class secondPage extends React.Component {
     };
     axios
       .all([
-        axios.get("api/loadTable"),
-        axios.post("api/analyze", postData),
+        axios.get("http://127.0.0.1:5000/loadTable"),
+        axios.post("http://127.0.0.1:5000/analyze", postData),
       ])
       .then(
         axios.spread((getRes, postRes) => {
@@ -77,7 +77,7 @@ export class secondPage extends React.Component {
           filter_level: this.props.filterLevel,
         };
         let detail = await axios
-          .post("api/analyze", postData)
+          .post("http://127.0.0.1:5000/analyze", postData)
           .then(function (response) {
             return response;
           })

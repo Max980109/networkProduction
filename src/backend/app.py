@@ -15,6 +15,7 @@ from flask import Flask, flash, request, redirect, url_for, jsonify,Blueprint
 from werkzeug.utils import secure_filename
 import json
 from flask_cors import CORS, cross_origin
+import shutil
 
 META_FOLDER = './meta'
 SIG_FOLDER = './sig'
@@ -28,7 +29,7 @@ matplotlib.use('agg')
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-api = Blueprint('api', __name__)
+# api = Blueprint('api', __name__)
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -80,7 +81,7 @@ def get_response_image(image_path):
 
 
 # upload the dataset file
-@api.route('/uploads/meta', methods=['POST'])
+@app.route('/uploads/meta', methods=['POST'])
 @cross_origin()
 def upload_dataset():
         print(request.method)
@@ -109,12 +110,14 @@ def upload_dataset():
                     return jsonify({'success':'successfully uploaded'}), 200
             else:
                 return jsonify(error = 'your file name is insecure, please rename your file')
-        elif ('sample' in request.files):
-            os.popen('cp ./raw_metabolomics.csv ./meta/raw_metabolomics.csv')
+        else:
+            print('copy meta')
+            shutil.copy2('./raw_metabolomics.csv' ,'./meta/')
+            return jsonify({'success':'successfully uploaded'}), 200
             
         
 # upload the positive test file
-@api.route('/uploads/sig', methods=['POST'])
+@app.route('/uploads/sig', methods=['POST'])
 @cross_origin()
 def upload_pos_file():
     if ('file' in request.files):
@@ -134,12 +137,14 @@ def upload_pos_file():
                 return jsonify({'success':'successfully uploaded'}), 200
         else:
             return jsonify(error = 'your file name is insecure, please rename your file')
-    elif ('sample' in request.files):
-        os.popen('cp ./significant_list_with_SMILES.csv ./sig/significant_list_with_SMILES.csv')
+    else:
+        print('copy sig')
+        shutil.copy2('./significant_list_with_SMILES.csv', './sig/')
+        return jsonify({'success':'successfully uploaded'}), 200
 
 
 
-@api.route('/loadTable', methods=['GET'])
+@app.route('/loadTable', methods=['GET'])
 @cross_origin()
 def load_Table():
         sig = read_csv_sig_json()
@@ -147,7 +152,7 @@ def load_Table():
         return {'table': json_sig}, 200
 
 # analyze the data
-@api.route('/analyze', methods=['POST'])
+@app.route('/analyze', methods=['POST'])
 @cross_origin()
 def analyze_data():
     if not is_empty_folder('./meta') and not is_empty_folder('./sig'):
@@ -170,7 +175,7 @@ def analyze_data():
     else:
         return jsonify({'error': 'please check you uploaded files'}), 400
 
-app.register_blueprint(api, url_prefix='/api')
+# app.register_blueprint(api, url_prefix='/api')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=5050)

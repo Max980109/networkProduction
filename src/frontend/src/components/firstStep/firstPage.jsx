@@ -98,14 +98,14 @@ export class dropzone extends React.Component {
     const metaData = new FormData();
     sigData.append('file', this.state.sigFiles)
     metaData.append('file',this.state.metaFiles)
-    await axios.post('api/uploads/sig', sigData,)
+    await axios.post('http://127.0.0.1:5000/uploads/sig', sigData,)
     .then(res => {
       console.log(res)
     })
     .catch(err => {
       console.log(err)
     })
-    await axios.post('api/uploads/meta', metaData)
+    await axios.post('http://127.0.0.1:5000/uploads/meta', metaData)
     .then(res => {
       console.log(res)
     })
@@ -120,6 +120,20 @@ export class dropzone extends React.Component {
     const metaData = new FormData();
     sigData.append('sample', this.state.sigFiles)
     metaData.append('sample',this.state.metaFiles)
+    await axios.post('http://127.0.0.1:5000/uploads/sig', sigData,)
+    .then(res => {
+      console.log(res)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+    await axios.post('http://127.0.0.1:5000/uploads/meta', metaData)
+    .then(res => {
+      console.log(res)
+    })
+    .catch(err => {
+      console.log(err)
+    })
     history.push("./secondPage")
   }
 
