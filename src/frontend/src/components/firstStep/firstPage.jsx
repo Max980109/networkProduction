@@ -54,7 +54,8 @@ const useStyles = (theme) => ({
   buttonContainer: {
     margin: theme.spacing(5),
     padding: "0",
-    textAlign: "right",
+    display: "flex",
+    justifyContent: "space-around"
   },
   textField: {
     margin: theme.spacing(1),
@@ -77,18 +78,8 @@ export class dropzone extends React.Component {
     this.handleTolerance = this.handleTolerance.bind(this)
     this.handleFilter = this.handleFilter.bind(this)
     this.submitFiles = this.submitFiles.bind(this)
+    this.runSample = this.runSample.bind(this)
   }
-  // handleChangeMeta(files) {
-  //   this.setState({
-  //     metafiles: files[0],
-  //   });
-  //   console.log(this.state.metaFiles)
-  // }
-  // handleChangeSig(files) {
-  //   this.setState({
-  //     sigFiles: files[0]
-  //   })
-  // }
 
   handleTolerance(event) {
     this.props.onToleranceChange(event.target.value);
@@ -107,7 +98,7 @@ export class dropzone extends React.Component {
     const metaData = new FormData();
     sigData.append('file', this.state.sigFiles)
     metaData.append('file',this.state.metaFiles)
-    await axios.post('api/uploads/sig', sigData)
+    await axios.post('api/uploads/sig', sigData,)
     .then(res => {
       console.log(res)
     })
@@ -121,6 +112,14 @@ export class dropzone extends React.Component {
     .catch(err => {
       console.log(err)
     })
+    history.push("./secondPage")
+  }
+
+  async runSample() {
+    const sigData = new FormData();
+    const metaData = new FormData();
+    sigData.append('sample', this.state.sigFiles)
+    metaData.append('sample',this.state.metaFiles)
     history.push("./secondPage")
   }
 
@@ -249,6 +248,18 @@ export class dropzone extends React.Component {
                 onClick={this.submitFiles}
               >
                 Next
+              </Button>
+              <Button
+                className={classes.button}
+                size="large"
+                variant="contained"
+                style={{ 
+                  backgroundColor: "#2F5D7C", 
+                  color: "#FFFFFF", 
+                }}
+                onClick={this.runSample}
+              >
+                Run Sample
               </Button>
             </Container>
           </Grid>
