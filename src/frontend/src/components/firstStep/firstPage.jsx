@@ -91,7 +91,7 @@ export class dropzone extends React.Component {
 
   async submitFiles() {
     if (this.state.sigFiles == null || this.state.metaFiles == null) {
-      alert('Please uploading files before proceed !')
+      alert('Please uploading files before proceeding !')
       return 
     }
     const sigData = new FormData();
