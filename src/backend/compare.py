@@ -87,10 +87,12 @@ def get_group_info(m, dataset, df, sig):
         parent_ID = select_df.iloc[0, 0]
         parent_feature = sig.loc[parent_ID, 'name']
         parent_fc = np.average(C0_data[C0_data.index.astype('int') == parent_ID]) / np.average(C1_data[C1_data.index.astype('int') == parent_ID])
+        parent_fc = parent_fc.round(2)
         product_ID = int(edges.index[e][0])
         product_trans_name = select_df.loc[select_df['into nodes ID'].astype('int') == product_ID, 'reaction']
         product_trans_diff = select_df.loc[select_df['into nodes ID'].astype('int') == product_ID, 'trans diff']
         product_fc = np.average(C0_data[C0_data.index.astype('int') == product_ID]) / np.average(C1_data[C1_data.index.astype('int') == product_ID])
+        product_fc = product_fc.round(2)
         paired_ID = int(edges.index[e][1])
         
         if paired_ID != parent_ID:
@@ -101,9 +103,13 @@ def get_group_info(m, dataset, df, sig):
             paired_trans_diff = pd.Series('none')
             
         paired_fc = np.average(C0_data[C0_data.index.astype('int') == paired_ID]) / np.average(C1_data[C1_data.index.astype('int') == paired_ID])
+        paired_fc = paired_fc.round(2)
         edge_C1 = C1_edge_matrix.loc[C1_edge_matrix.index.astype('int') == product_ID, C1_edge_matrix.columns.astype('int') == paired_ID]
+        edge_C1 = edge_C1.round(2)
         edge_C0 = C0_edge_matrix.loc[C0_edge_matrix.index.astype('int') == product_ID, C0_edge_matrix.columns.astype('int') == paired_ID]
+        edge_C0 = edge_C0.round(2)
         edge_SUBS = SUBS_edge_matrix.loc[SUBS_edge_matrix.index.astype('int') == product_ID, SUBS_edge_matrix.columns.astype('int') == paired_ID]
+        edge_SUBS = edge_SUBS.round(2)
         
         r = np.array([parent_ID, parent_feature, parent_fc, 
                   product_ID, product_trans_name.values[0], 
