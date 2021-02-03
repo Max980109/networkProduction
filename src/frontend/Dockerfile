@@ -3,7 +3,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app
 
-RUN npm install --max-old-space-size=350
+RUN npm install
 
 COPY . /usr/src/app
 RUN npm run build
